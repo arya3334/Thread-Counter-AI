@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thread Counter AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; text-align: center; padding: 50px; }
+        .container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.1); display: inline-block; }
+        input[type="file"] { margin: 20px 0; }
+        input[type="submit"] { background-color: #4CAF50; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧵 AI Thread Counter</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required><br>
+            <input type="submit" value="Count Threads">
+        </form>
+    </div>
+</body>
+</html>
